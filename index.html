@@ -3,58 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chinatown History Quiz</title>
+    <title>Chinatown History information</title>
 
     <!-- css file link -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 id="title">How much do you know about Chinatown history?</h1>
-
-    <!-- quiz-container -->
-    <div id="quiz-container">
-        <!-- question container -->
-        <div class="questions">
-            <h2 id="question"></h2>
-            <ol type="A">
-                <li class="option"><span id="option0" onclick="calcScore(this)"></span></li>
-                <li class="option"><span id="option1" onclick="calcScore(this)"></span></li>
-                <li class="option"><span id="option2" onclick="calcScore(this)"></span></li>
-                <li class="option"><span id="option3" onclick="calcScore(this)"></span></li>
-            </ol>
-            <h4 id="stat"></h4>
-        </div>
-
-        <div class="buttons">
-            <button type="button" class="next">NEXT</button>
-        </div>
-
+    <svg viewBox="0 0 960 300">
+        <symbol id="s-text">
+            <text text-anchor="middle" x="50%" y="80%"> CHINATOWN HISTORY</text>
+        </symbol>
+        <g class="g-ants">
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+        </g>
+    </svg>
+    <!-- first box -->
+    <label class="textOverImage" style="background-image:url(https://web.opendrive.com/api/v1/download/file.json/NTlfNDgyMTkzNl8?inline=1)">
+        <input type="checkbox">
+        <h2>Little canton</h2>
+        <div>
+            At first, it was known as “_____” due to the Cantonese-speaking immigrants that came from the province of Canton — known today as Guangzhou — in southeastern China.         </div>
+      </label>
+<!-- second box -->
+<label class="textOverImage" style="background-image:url(https://web.opendrive.com/api/v1/download/file.json/NTlfNDgyMDc3MV8?inline=1)">
+    <input type="checkbox">
+    <h2>Opium War and Taiping Revolution</h2>
+    <div>
+        Overseas, in the southern region of China where people were reeling from the economic and class instability resulting from the _____
     </div>
+  </label>
+  <!-- third box -->
+<label class="textOverImage" style="background-image:url(https://web.opendrive.com/api/v1/download/file.json/NTlfNDgyMDc3MV8?inline=1)">
+    <input type="checkbox">
+    <h2>Page Act of 1875</h2>
+    <div>
+        One of the earliest laws against Chinese immigrants was the _________, which prohibited the entry of Chinese women.   </div>
+  </label>
+  <!-- fourth box -->
+<label class="textOverImage" style="background-image:url(https://web.opendrive.com/api/v1/download/file.json/NTlfNDgyMDc3MV8?inline=1)">
+    <input type="checkbox">
+    <h2>racial exclusion and self protection </h2>
+    <div>
+        Chinatowns were borne out of necessity due to _______, says Min Zhou, director of UCLA's Asia Pacific Center and professor of sociology and Asian American Studies. </div>
+  </label>
+  <!-- fifth box -->
+<label class="textOverImage" style="background-image:url(https://web.opendrive.com/api/v1/download/file.json/NTlfNDgyMDc3MV8?inline=1)">
+    <input type="checkbox">
+    <h2> found gold </h2>
+    <div>
+        The story of many historic Chinatowns across the United States began in 1848 when James W. Marshall______ in Northern California.   </div>
+  </label>
+   <!-- sixth box -->
+<label class="textOverImage" style="background-image:url(https://web.opendrive.com/api/v1/download/file.json/NTlfNDgyMDc3MV8?inline=1)">
+    <input type="checkbox">
+    <h2>  Chinese Exclusion Act in 1943  </h2>
+    <div>
+        After China became an ally to the United States during WWII, the U.S. repealed the _____ and allowed Chinese immigrants to be naturalized as citizens.  </div>
+  </label>
+   <!-- seventh box -->
+<label class="textOverImage" style="background-image:url(https://web.opendrive.com/api/v1/download/file.json/NTlfNDgyMDc3MV8?inline=1)">
+    <input type="checkbox">
+    <h2>  racial exclusion, self protection,  Informal housing restrictions, segregation against Asians</h2>
+    <div>
+        Chinatowns were borne out of necessity due to______
+      </div>
+  </label>
+   <!-- eighth box -->
+<label class="textOverImage" style="background-image:url(https://web.opendrive.com/api/v1/download/file.json/NTlfNDgyMDc3MV8?inline=1)">
+    <input type="checkbox">
+    <h2>  Chinatowns </h2>
+    <div>
+        Today there are about 50 _____ in the U.S. Some of the best known are located in New York, San Francisco, Los Angeles, Washington, D.C., Honolulu, Seattle, Chicago, Philadelphia, Houston and Portland, Oregon. </div>
+  </label>
 
-    <!-- scoreboard section -->
-    <div id="scoreboard">
-        <img src="profile.jpeg" alt="">
-        <h2 id="score-title">Your Score</h2>
-        <h2 id="score"></h2>
-        <button type="button" id="score-btn" onclick="backToQuiz()">Back to Quiz</button>
-        <button type="button" id="check-answer" onclick="checkAnswer()">Check Answers</button>
-        <button onclick="window.location.href='map.html'">
-            Go to the Map
-          </button>
-        
-    </div>
 
-    <!-- answers section -->
-    <div id="answerBank">
-        <h2>Answers :</h2>
-        <ol type="1" id="answers">
-
-        </ol>
-        <button type="button" id="score-btn" onclick="backToQuiz()">Back to Quiz</button>
-
-    </div>
-
-    <!-- javascript file source -->
-    <script src="quiz.js"></script>
 </body>
 </html>

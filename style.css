@@ -1,5 +1,4 @@
 
-
 *{
     margin: 0;
     padding: 0;
@@ -12,103 +11,110 @@ body{
     background-position: center;
     height: 100vh;
 }
-img{
-    width: 5.5rem;
-    height: 5.2rem;
-    border-radius: 40%;
-}
-.img{
-    position: fixed;
-}
-#title{
-    text-align: center;
-    padding: 1.8rem 0;
-    font-size: 2.5rem;
-    color: rgb(139, 95, 44);
+
+
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Indie+Flower&family=Montserrat+Alternates:wght@200&family=PT+Mono&family=Poiret+One&display=swap');
+
+
+p:hover {
+    margin: 70px 110px 80px 90px;
+    text-shadow:
+        1px 1px 0 #aaa,
+        2px 2px 0 #bbb,
+        3px 3px 0 #bbb,
+        4px 4px 0 #bbb,
+        13px 13px 35px #888,
+        13px 13px 20px #444;}
+
+        html, body {
+            height: 100%;
+            font-weight: 800;
+        }
+        body {
+            background-size: cover;
+            font-family: Arial;
+        }
+        svg {
+            display: block;
+            font: 5em 'Montserrat Alternates', sans-serif;
+            width: 960px;
+            height: 300px;
+            margin: 0 auto;
+        }
+        .text-copy {
+            fill: none;
+            stroke: white;
+            stroke-dasharray: 6% 29%;
+            stroke-width: 5px;
+            stroke-dashoffset: 0%;
+            animation: stroke-offset 5s infinite linear;
+        }
+        .text-copy:nth-child(1) {
+            stroke: #5c0404;
+            animation-delay: -1s;
+        }
+        .text-copy:nth-child(2) {
+            stroke: #ff0000;
+            animation-delay: -2s;
+        }
+        .text-copy:nth-child(3) {
+            stroke: #fc7100;
+            animation-delay: -3s;
+        }
+        .text-copy:nth-child(4) {
+            stroke: #ff590c;
+            animation-delay: -4s;
+        }
+        .text-copy:nth-child(5) {
+            stroke: #e46e6a;
+            animation-delay: -5s;
+        }
+        @keyframes stroke-offset {
+            100% { stroke-dashoffset: -35%;}
+        }
+
+.textOverImage{
+    width:250px;
+    height:200px;
+    display:inline-block;
+    background-size:cover;
+    border-radius:4px;
+    margin:4px;
+    position:relative;
+    cursor:pointer;
+    overflow:hidden;
     font-family: Copperplate;
-}
-.questions{
-    margin: 3rem auto;
-    width: 90vw;
-    padding: 2rem;
-    /* background: rgba(57, 68, 67, 0.45); */
-    cursor: default;
-    border-radius: 1rem;
-    text-align: center;
-    color:antiquewhite;
-    
-}
-#question{
-    margin-bottom: 1rem;
-}
-.option{
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
-    border-bottom: solid 0.1rem rgb(241, 208, 115);
-    width: 15rem;
-    background: rgba(231, 162, 116, 0.74);
-    border-radius: 1rem;
-}
-.option:hover{
-    color: white;
-}
-ol{
-    position: relative;
-    padding: 0 1.5rem;
-    color: rgb(248, 225, 225);
-}
-span{
-    display: block;
-    padding: 0.1rem 0.7rem;
-    border-radius: 1rem;
-}
-#answer{
-    margin-top: 1.5rem;
-}
-#stat{
-    margin-top: 1.5rem;
-    color: rgb(236, 186, 139);
-}
-.buttons{
-    text-align: center;
-}
-button{
-    padding: 0.2rem 1.5rem;
-    border: none;
-    outline: none;
-    font-size: 1rem;
-    border-radius: 1.5rem;
-    color: rgba(253, 231, 228, 0.98);
-    background: rgba(91, 94, 65, 0.82);
-    font-family: Copperplate;
-}
-button:active{
-    background: lavender;
-}
-#scoreboard,#answerBank{
-    width: 20rem;
-    background: rgba(245, 224, 219, 0.77);
-    padding: 2rem;
-    text-align: center;
-    margin: auto;
-    position: relative;
-    top: 5rem;
-    display: none;
-}
-#score-title{
-    margin: 1rem 0;
-}
-#score-btn,#check-answer{
-    margin-top: 1rem;
-}
-#score{
-    font-size: 2.5rem;
-}
-#answerBank li{
-    text-align: left;
-    margin-bottom: 0.2rem;
-    font-size: larger;
-}
-#answers{
-    margin-top: 1rem;
-}
+  }
+  
+  .textOverImage > input{
+    display:none;
+  }
+  
+  .textOverImage > div,.textOverImage > h2{
+    position:absolute;
+    background-color:rgb(255, 179, 64);
+    bottom:20px;
+    left:4px;
+    right:4px;
+    border-radius:4px;
+    padding:8px;
+    overflow:hidden;
+    opacity:0;
+    transition:.3s;
+  }
+  
+  .textOverImage:hover > h2,.textOverImage > input:checked + h2 + div{
+    bottom:4px;
+    opacity:1;
+  }
+  
+  .textOverImage > input:checked + h2{
+    bottom:-20px;
+    opacity:0;
+  }
+  
+  .textOverImage > h2{
+    margin:0;
+  }
+
+  
