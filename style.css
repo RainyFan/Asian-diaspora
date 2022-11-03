@@ -117,4 +117,31 @@ p:hover {
     margin:0;
   }
 
+  #cf {
+    position:relative;
+    height:281px;
+    width:450px;
+    margin:0 auto;
+  }
   
+  #cf img {
+    position:absolute;
+    left:0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  #cf img.top:hover {
+    opacity:0;
+  }
+
+  .page1button{
+    position:absolute; 
+    width: 231.41px;
+    height:65.73px;
+    left:1097.59px;
+    top:2850.58px;
+
+  }

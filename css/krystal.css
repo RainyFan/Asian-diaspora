@@ -1,0 +1,136 @@
+
+
+body {
+    background: url("image/background.jpg");
+    background-size: cover;
+    background-position: center;
+    height:100vh;
+}
+
+
+.image-container{
+    position:absolute;
+    opacity: 0;
+}
+
+.image-container:hover{
+    opacity:1;
+}
+
+.image-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.info{
+    position:absolute;
+opacity: 0;
+}
+
+.info.visible{
+    opacity:1;
+}
+
+.scene{
+    position:absolute;
+    opacity: 0;
+}
+.scene.visible{
+    opacity:1;
+}
+
+.mapbg{
+    position: absolute;
+    width: 1144.28px;
+    height: 871.05px;
+    left: 179.87px;
+    top: 1.29px;
+opacity:1;
+}
+
+.flushing1{
+    position: absolute;
+width: 524px;
+height: 394px;
+left: 30px;
+top: 32px;
+
+}
+
+.flushing2{
+    position: absolute;
+width: 559.62px;
+height: 323.5px;
+left: 809.14px;
+top: 262.25px;
+}
+
+.flushing3{
+    position: absolute;
+    width: 583.63px;
+    height: 340.99px;
+    left: 30px;
+    top: 585.99px;
+}
+
+.flushing4{
+    position: absolute;
+    width: 463.78px;
+    height: 272.9px;
+    left: 828.86px;
+    top: 692.01px;
+}
+
+.subwaymap{
+    position: absolute;
+    width: 1439.19px;
+    height: 936.35px;
+    left: 0.81px;
+    top: 0px;
+    
+}
+.flushingcircle{
+    box-sizing: border-box;
+
+position: absolute;
+width: 113.9px;
+height: 113.45px;
+left: 1092.93px;
+top: 455.28px;
+
+opacity:1;
+}
+
+.brooklyncircle{
+    box-sizing: border-box;
+
+position: absolute;
+width: 113.9px;
+height: 113.45px;
+left: 637.29px;
+top: 666.29px;
+opacity:1;
+}
+
+.flushing{
+    position: absolute;
+width: 67.36px;
+height: 21.2px;
+left: 1116.2px;
+top: 501.4px;
+}
+.brooklyn{
+    position: absolute;
+width: 72.51px;
+height: 21.2px;
+left: 657.98px;
+top: 712.41px;
+}
+.flushingtitle{
+    position: absolute;
+    width: 490.18px;
+    height: 55.93px;
+    left: 678.98px;
+    top: 6.04px;
+}
